@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <header class="catalog-header">
+    <nav class="header-navigation">
+      <img class="navigation-image" src="#" alt="Логотип сайта">
+      <form action="https://echo.htmlacademy.ru" class="finder-form" method="post">
+        <input class="finder-field" type="text" placeholder="Текст поиска" name="finder-field" required>
+        <button class="find-button" type="submit"></button>
+      </form>
+      <ul class="navigation-list">
+        <li class="navigation-item">Максим Новиков</li>
+        <li class="navigation-item"><a class="navigation-item-link" href="index.html">Выйти</a></li>
+        <li class="navigation-item">Сравнить</li>
+        <li class="navigation-item">Корзина</li>
+      </ul>
+      <ul class="navigation-product-list">
+        <li class="navigation-product-item">Каталог товаров</li>
+        <li class="navigation-product-item">Доставка</li>
+        <li class="navigation-product-item">Гарантия</li>
+        <li class="navigation-product-item">Контакты</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="mini-header">
+      <h1 class="inner-header-title">Моноподы для селфи</h1>
+      <nav class="mini-header-navigation">
+        <ul class="mini-header-list">
+          <li class="mini-header-item">Главная</li>
+          <li class="mini-header-item">Каталог товаров</li>
+          <li class="mini-header-item">Моноподы для селфи</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="variants">
+      <ul class="variants-list">
+        <li class="variants-item">Фильтр</li>
+        <li class="variants-item">Сортировка</li>
+        <li class="variants-item"><select class="variants-select" aria-label="Сортировка">
+            <option value="popular">Популярные</option>
+            <option value="rating">Рейтинговые</option>
+          </select></li>
+      </ul>
+      <button class="button-plus" type="button"></button>
+      <button class="button-minus" type="button"></button>
+      </button>
+      <form class="variants-catalog" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="variants-catalog-part">
+          <legend class="variants-catalog-part-title">Стоимость</legend>
+          <div class="range-container">
+            <div class="range-scale">
+              <div class="range"></div>
+            </div>
+            <button class="range-handle range-handle-min" type="button">
+              <span class="visually-hidden">Установить минимальный порог цены</span>
+            </button>
+            <button class="range-handle range-handle-max" type="button">
+              <span class="visually-hidden">Установить максимальный порог цены</span>
+            </button>
+        </fieldset>
+        <fieldset class="variants-catalog-part">
+          <legend class="variants-catalog-part-title">Цвет</legend>
+          <ul class="variants-catalog-part-list">
+            <li class="variants-catalog-part-item">
+              <label class="color">
+                <input type="checkbox" class="color-input" name="black" checked>
+                Черный
+              </label>
+            </li>
+            <li class="variants-catalog-part-item">
+              <label class="color">
+                <input type="checkbox" class="color-input" name="white" checked>
+                Белый
+              </label>
+            </li>
+            <li class="variants-catalog-part-item">
+              <label class="color">
+                <input type="checkbox" class="color-input" name="blue">
+                Синий
+              </label>
+            </li>
+            <li class="variants-catalog-part-item">
+              <label class="color">
+                <input type="checkbox" class="color-input" name="red">
+                Красный
+              </label>
+            </li>
+            <li class="variants-catalog-part-item">
+              <label class="color">
+                <input type="checkbox" class="color-input" name="pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="variants-catalog-part">
+          <legend class="variants-catalog-part-title">Bluetooth</legend>
+          <ul class="variants-catalog-part-list">
+            <li class="filter-catalog-part-item">
+              <label class="Bluetooth">
+                <input type="radio" class="variants-radio" name="choose-type" value="yes" checked>
+                Есть
+              </label>
+            </li>
+            <li class="filter-catalog-part-item">
+              <label class="Bluetooth">
+                <input type="radio" class="variants-radio" name="choose-type" value="no">
+                Нет
+              </label>
+            </li>
+        </fieldset>
+        <a class="variants-form-link" href="#">Показать</a>
+      </form>
+      <ul class="variants-selfie-list">
+        <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Любительская
+          селфи-палка">
+          <p class="variants-selfie-text">Любительская
+            селфи-палка</p>
+            <p class="variants-selfie-text">500 ₽</p>
+        </li>
+        <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Профессиональная селфи-палка">
+          <p class="variants-selfie-text">Профессиональная селфи-палка</p>
+          <p class="variants-selfie-text">1500 ₽</p>
+        </li>
+        <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Непотопляемая
+          селфи-палка">
+          <p class="variants-selfie-text">Непотопляемая
+            селфи-палка</p>
+            <p class="variants-selfie-text">2500 ₽</p>
+        </li>
+        <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Селфи-палка «Следуй за мной»">
+          <p class="variants-selfie-text">Селфи-палка «Следуй за мной»</p>
+          <p class="variants-selfie-text">1500 ₽</p>
+        </li>
+      </ul>
+      <button class="download-more" type="button">Загрузить ещё</button>
+    </section>
+    <section class="pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item"><a class="pagination-link">Назад</a></li>
+        <li class="pagination-item"><a class="pagination-link">1</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+        <li class="pagination-item"><p class="pagination-text">...</p></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">15</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">Вперед</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section class="contacts">
+      <img class="contacts-image" src="#" alt="Логотип сайта">
+      <address class="contacts-address">Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.</address>
+      <ul class="contacts-list">
+        <li class="contacts-item">Доставка</li>
+        <li class="contacts-item">Гарантия</li>
+        <li class="contacts-item">Контакты</li>
+      </ul>
+      <tel class="contacts-tel" href="Тел.: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</tel>
+      <ul class="contacts-image-list">
+        <li class="contacts-image-item"><img src="#" alt="Telegram" class="contacts-image"></li>
+        <li class="contacts-image-item"><img src="#" alt="you tube" class="contacts-image"></li>
+        <li class="contacts-image-item"><img src="#" alt="twitter" class="contacts-image"></li>
+      </ul>
+      <img class="html-academy" src="#" alt="html-academy">html-academy</img>
+    </section>
+  </footer>
+</body>
+
+</html>

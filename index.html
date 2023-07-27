@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="header-navigation">
+      <img class="navigation-image" src="#" alt="Логотип сайта">
+      <form action="https://echo.htmlacademy.ru" class="finder-form" method="post">
+        <input class="finder-field" type="text" placeholder="Поиск по сайту" name="finder-field" required>
+        <button class="find-button" type="submit">Найти</button>
+      </form>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="navigation-item-link" href="catalog.html">Войти</a></li>
+        <li class="navigation-item">Сравнить</li>
+        <li class="navigation-item">Корзина</li>
+      </ul>
+      <ul class="navigation-product-list">
+        <li class="navigation-product-item">Каталог товаров</li>
+        <li class="navigation-product-item">Доставка</li>
+        <li class="navigation-product-item">Гарантия</li>
+        <li class="navigation-product-item">Контакты</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Магазин Device</h1>
+    <section class="quadrocopter">
+      <h2 class="quadrocopter-title">
+        Порхает как бабочка, жалит как пчела!
+      </h2>
+      <img class="quadrocopter-image" src="#" alt="Квадрокоптер">
+      <p class="quadrocopter-text">
+        Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+      </p>
+      <a href="#" class="quadrocopter-link">Подробнее</a>
+      <ul class="quadrocopter-characters-list">
+        <li class="quadrocopter-characters-item"><b>800 м</b> Дальность полета</li>
+        <li class="quadrocopter-characters-item"><b>50 м</b> Радиус поражения</li>
+      </ul>
+    </section>
+    <section class="devices">
+      <h2 class="visually-hidden">Список-товаров</h2>
+      <ul class="devices-list">
+        <li class="devices-item"><img class="devices-image" src="#" alt="Виртуальная реальность">Виртуальная реальность
+        </li>
+        <li class="devices-item"><img class="devices-image" src="#" alt="Моноподы для селфи">Моноподы для селфи</li>
+        <li class="devices-item"><img class="devices-image" src="#" alt="Экшн-камеры">Экшн-камеры</li>
+        <li class="devices-item"><img class="devices-image" src="#" alt="Фитнес-браслеты">Фитнес-браслеты</li>
+        <li class="devices-item"><img class="devices-image" src="#" alt="Умные часы">Умные часы</li>
+        <li class="devices-item"><img class="devices-image" src="#" alt="Квадрокоптеры">Квадрокоптеры</li>
+      </ul>
+    </section>
+    <section class="delivery">
+      <ul class="delivery-list">
+        <li class="delivery-item">Доставка</li>
+        <li class="delivery-item">Гарантия</li>
+        <li class="delivery-item">Кредит</li>
+      </ul>
+      <h2 class="delivery-title">Доставка</h2>
+      <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо
+        к вашему подъезду совершенно бесплатно! Ведь
+        мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      <p class="delivery-rare">Доставим редкий товар под заказ</p>
+    </section>
+    <footer class="mini-footer">
+      <ul class="main-footer-list">
+        <li class="main-footer-item">О нас
+          <p class="main-footer-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+          </p>
+          <p class="main-footer-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+            компаниями:</p>
+          <ul class="companies-list">
+            <li class="companies-item">Меловые линии</li>
+            <li class="companies-item">СДИК</li>
+            <li class="companies-item">ТоксБерри</li>
+          </ul>
+          <a class="main-footer-link" href="#">Подробнее о нас</a>
+        </li>
+        <li class="main-footer-item">Контакты
+          <p class="main-footer-text">Вы можете забрать товар сами, заехав в наш офис.
+            Заодно сможете проверить работоспособность покупки. </p>
+          <ul class="contacts-main-list">
+            <li class="contacts-main-item">Интернет-магазин «Девайс»
+              <address class="contacts-main-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+              <a class="contacts-main-tel" href="+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+            </li>
+            <li class="contacts-main-item">Время работы
+              <p class="contacts-main-text">пн—пт: с 10:00 до 22:00</p>
+              <p class="contacts-main-text">сб—вс: с 10:00 до 19:00</p>
+            </li>
+          </ul>
+          <a class="main-footer-link" href="#">Напишите нам</a>
+        </li>
+      </ul>
+    </footer>
+  </main>
+  <footer class="main-footer">
+    <section class="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
+        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <form action="https://echo.htmlacademy.ru" class="subscribe-form" method="post">
+        <input class="subscribe-field" type="" placeholder="Ваш e-mail" name="subscribe-field" required>
+        <button class="subscribe-button" type="submit">Подписаться</button>
+      </form>
+      <p class="subscribe-text">Это бесплатно</p>
+    </section>
+    <section class="contacts">
+      <img class="contacts-image" src="#" alt="Логотип сайта">
+      <address class="contacts-address">Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.</address>
+      <ul class="contacts-list">
+        <li class="contacts-item">Доставка</li>
+        <li class="contacts-item">Гарантия</li>
+        <li class="contacts-item">Контакты</li>
+      </ul>
+      <tel class="contacts-tel" href="Тел.: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</tel>
+      <ul class="contacts-image-list">
+        <li class="contacts-image-item"><img src="#" alt="Telegram" class="contacts-image"></li>
+        <li class="contacts-image-item"><img src="#" alt="you tube" class="contacts-image"></li>
+        <li class="contacts-image-item"><img src="#" alt="twitter" class="contacts-image"></li>
+      </ul>
+      <img class="html-academy" src="#" alt="html-academy">html-academy</img>
+    </section>
+  </footer>
+</body>
 </html>
