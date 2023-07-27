@@ -12,30 +12,43 @@
       <img class="navigation-image" src="#" alt="Логотип сайта">
       <form action="https://echo.htmlacademy.ru" class="finder-form" method="post">
         <input class="finder-field" type="text" placeholder="Текст поиска" name="finder-field" required>
-        <button class="find-button" type="submit"></button>
+        <button class="find-button" type="submit">Найти</button>
       </form>
       <ul class="navigation-list">
-        <li class="navigation-item">Максим Новиков</li>
+        <li class="navigation-item"><a class="navigation-item-link" href="#">Максим Новиков</a></li>
         <li class="navigation-item"><a class="navigation-item-link" href="index.html">Выйти</a></li>
-        <li class="navigation-item">Сравнить</li>
-        <li class="navigation-item">Корзина</li>
+        <li class="navigation-item"><a class="navigation-item-link" href="#">Сравнить</li>
+        <li class="navigation-item"><a class="navigation-item-link" href="#">Корзина</li>
+      </ul>
+      <a href="#" class="navigation-link">Каталог товаров</a>
+      <ul class="navigation-devices-list">
+        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Виртуальная реальность</a></li>
+        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Моноподы для
+            cелфи</a></li>
+        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Экшн-камеры</a></li>
+      </ul>
+      <ul class="navigation-devices-list">
+        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Фитнес браслеты</a></li>
+        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Умные часы</a></li>
+      </ul>
+      <ul class="navigation-devices-list">
+        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Квадрокоптеры</a></li>
       </ul>
       <ul class="navigation-product-list">
-        <li class="navigation-product-item">Каталог товаров</li>
-        <li class="navigation-product-item">Доставка</li>
-        <li class="navigation-product-item">Гарантия</li>
-        <li class="navigation-product-item">Контакты</li>
+        <li class="navigation-product-item"><a class="navigation-product-link" href="#"></a>Доставка</li>
+        <li class="navigation-product-item"><a class="navigation-product-link" href="#"></a>Гарантия</li>
+        <li class="navigation-product-item"><a class="navigation-product-link" href="#"></a>Контакты</li>
       </ul>
     </nav>
   </header>
   <main>
-    <header class="mini-header">
-      <h1 class="inner-header-title">Моноподы для селфи</h1>
-      <nav class="mini-header-navigation">
-        <ul class="mini-header-list">
-          <li class="mini-header-item">Главная</li>
-          <li class="mini-header-item">Каталог товаров</li>
-          <li class="mini-header-item">Моноподы для селфи</li>
+    <header class="main-header">
+      <h1 class="main-header-title">Моноподы для селфи</h1>
+      <nav class="main-header-navigation">
+        <ul class="main-header-list">
+          <li class="main-header-item">Главная</li>
+          <li class="main-header-item">Каталог товаров</li>
+          <li class="main-header-item">Моноподы для селфи</li>
         </ul>
       </nav>
     </header>
@@ -46,10 +59,11 @@
         <li class="variants-item"><select class="variants-select" aria-label="Сортировка">
             <option value="popular">Популярные</option>
             <option value="rating">Рейтинговые</option>
-          </select></li>
+          </select>
+        </li>
       </ul>
-      <button class="button-plus" type="button"></button>
-      <button class="button-minus" type="button"></button>
+      <button class="button-plus" type="button">Вверх</button>
+      <button class="button-minus" type="button">Вниз</button>
       </button>
       <form class="variants-catalog" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="variants-catalog-part">
@@ -121,22 +135,22 @@
       <ul class="variants-selfie-list">
         <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Любительская
           селфи-палка">
-          <p class="variants-selfie-text">Любительская
-            селфи-палка</p>
-            <p class="variants-selfie-text">500 ₽</p>
+          <p class="variants-selfie-text"><a class="variants-selfie-link" href="#">Любительская
+            селфи-палка</a></p>
+          <p class="variants-selfie-text">500 ₽</p>
         </li>
         <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Профессиональная селфи-палка">
-          <p class="variants-selfie-text">Профессиональная селфи-палка</p>
+          <p class="variants-selfie-text"><a class="variants-selfie-link" href="#">Профессиональная селфи-палка</a></p>
           <p class="variants-selfie-text">1500 ₽</p>
         </li>
         <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Непотопляемая
           селфи-палка">
-          <p class="variants-selfie-text">Непотопляемая
-            селфи-палка</p>
-            <p class="variants-selfie-text">2500 ₽</p>
+          <p class="variants-selfie-text"><a class="variants-selfie-link" href="#">Непотопляемая
+            селфи-палка</a></p>
+          <p class="variants-selfie-text">2500 ₽</p>
         </li>
         <li class="variants-selfie-item"><img class="variants-selfie-image" src="#" alt="Селфи-палка «Следуй за мной»">
-          <p class="variants-selfie-text">Селфи-палка «Следуй за мной»</p>
+          <p class="variants-selfie-text"><a class="variants-selfie-link" href="#">Селфи-палка «Следуй за мной»</a></p>
           <p class="variants-selfie-text">1500 ₽</p>
         </li>
       </ul>
@@ -148,29 +162,36 @@
         <li class="pagination-item"><a class="pagination-link">1</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-        <li class="pagination-item"><p class="pagination-text">...</p></li>
+        <li class="pagination-item">
+          <p class="pagination-text">...</p>
+        </li>
         <li class="pagination-item"><a class="pagination-link" href="#">15</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">Вперед</a></li>
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="catalog-footer">
     <section class="contacts">
       <img class="contacts-image" src="#" alt="Логотип сайта">
       <address class="contacts-address">Санкт-Петербург, набережная
         реки Карповки, 5, литера П.</address>
       <ul class="contacts-list">
-        <li class="contacts-item">Доставка</li>
-        <li class="contacts-item">Гарантия</li>
-        <li class="contacts-item">Контакты</li>
+        <li class="contacts-item"><a class="contacts-link" href="#">Доставка</a></li>
+        <li class="contacts-item"><a class="contacts-link" href="#">Гарантия</a></li>
+        <li class="contacts-item"><a class="contacts-link" href="#">Контакты</a></li>
       </ul>
-      <tel class="contacts-tel" href="Тел.: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</tel>
+      <a class="contacts-tel" href="Тел.: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
       <ul class="contacts-image-list">
-        <li class="contacts-image-item"><img src="#" alt="Telegram" class="contacts-image"></li>
-        <li class="contacts-image-item"><img src="#" alt="you tube" class="contacts-image"></li>
-        <li class="contacts-image-item"><img src="#" alt="twitter" class="contacts-image"></li>
+        <li class="contacts-image-item"><a class="contacts-image-link" href="https://t.me/htmlacademy"><img src="#"
+              alt="Telegram" class="contacts-image"></a></li>
+        <li class="contacts-image-item"><a class="contacts-image-link"
+            href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="YouTube" class="contacts-image"></a>
+        </li>
+        <li class="contacts-image-item"><a class="contacts-image-link" href="https://twitter.com/htmlacademy_ru"><img
+              src="#" alt="Twitter" class="contacts-image"></a></li>
       </ul>
-      <img class="html-academy" src="#" alt="html-academy">html-academy</img>
+      <a class="html-academy-link" href="https://htmlacademy.ru/"><img class="html-academy"
+          alt="html-academy">html-academy</img></a>
     </section>
   </footer>
 </body>
