@@ -10,74 +10,71 @@
   <body>
     <div class="page-container">
       <header class="main-header">
-        <div class="header-container">
-          <nav class="header-navigation">
-            <a href="#" class="header-navigation-link">
-              <img class="header-navigation-image" src="images/logo-black.svg" alt="Логотип сайта Device">
-            </a>
-            <div class="header-top-container">
-              <form action="https://echo.htmlacademy.ru" class="finder-form" method="get">
-                <input class="finder-field" type="text" placeholder="Поиск по сайту" name="finder-field" required>
-                <button class="find-button" type="submit">Найти</button>
-              </form>
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a class="navigation-item-link" href="catalog.html"><span
-                      class="navigation-item-span come">Войти</span></a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-item-link" href="#"><span class="navigation-item-span">Сравнить</span></a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-item-link" href="#"><span class="navigation-item-span">Корзина</span></a>
-                </li>
-
-              </ul>
-            </div>
-            <div class="header-bottom-container">
-              <div class="submenu-container">
-                <a href="#" class="navigation-link">Каталог товаров</a>
-                <div class="submenu">
-                  <ul class="navigation-devices-list">
-                    <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Виртуальная
-                        реальность</a>
-                    </li>
-                    <li class="navigation-devices-item"><a class="navigation-devices-link" href="catalog.html">Моноподы
-                        для
-                        cелфи</a>
-                    </li>
-                    <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Экшн-камеры</a>
-                    </li>
-                  </ul>
-                  <ul class="navigation-devices-list">
-                    <li class="navigation-devices-item">
-                      <a class="navigation-devices-link" href="#">Фитнес браслеты</a>
-                    </li>
-                    <li class="navigation-devices-item">
-                      <a class="navigation-devices-link" href="#">Умные часы</a>
-                    </li>
-                  </ul>
-                  <ul class="navigation-devices-list">
-                    <li class="navigation-devices-item">
-                      <a class="navigation-devices-link" href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
-                </div>
+        <nav class="header-navigation">
+          <a href="#" class="header-navigation-link">
+            <img class="header-navigation-image" src="images/logo-black.svg" alt="Логотип сайта Device">
+          </a>
+          <div class="header-top-container">
+            <form action="https://echo.htmlacademy.ru" class="finder-form" method="get">
+              <input class="finder-field" type="text" placeholder="Поиск по сайту" name="finder-field" required>
+              <button class="find-button" type="submit">Найти</button>
+            </form>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-item-link navigation-come" href="catalog.html"><span
+                    class="navigation-item-span come">Войти</span></a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item-link navigation-compare" href="#"><span class="navigation-item-span">Сравнить</span></a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item-link navigation-basket" href="#"><span class="navigation-item-span">Корзина</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-bottom-container">
+            <div class="submenu-container">
+              <a href="#" class="navigation-link">Каталог товаров</a>
+              <div class="submenu">
+                <ul class="navigation-devices-list">
+                  <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Виртуальная
+                      реальность</a>
+                  </li>
+                  <li class="navigation-devices-item"><a class="navigation-devices-link" href="catalog.html">Моноподы
+                      для
+                      cелфи</a>
+                  </li>
+                  <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="navigation-devices-list">
+                  <li class="navigation-devices-item">
+                    <a class="navigation-devices-link" href="#">Фитнес браслеты</a>
+                  </li>
+                  <li class="navigation-devices-item">
+                    <a class="navigation-devices-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="navigation-devices-list">
+                  <li class="navigation-devices-item">
+                    <a class="navigation-devices-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </div>
-              <ul class="navigation-product-list">
-                <li class="navigation-product-item">
-                  <a class="navigation-product-link" href="#">Доставка</a>
-                </li>
-                <li class="navigation-product-item">
-                  <a class="navigation-product-link" href="#">Гарантия</a>
-                </li>
-                <li class="navigation-product-item">
-                  <a class="navigation-product-link" href="#">Контакты</a>
-                </li>
-              </ul>
             </div>
-          </nav>
-        </div>
+            <ul class="navigation-product-list">
+              <li class="navigation-product-item">
+                <a class="navigation-product-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-product-item">
+                <a class="navigation-product-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-product-item">
+                <a class="navigation-product-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Магазин Device</h1>
@@ -87,7 +84,7 @@
           </h2>
           <ul class="slider-list">
             <li class="slider-item slider-item-active">
-              <img class="slider-image" src="images/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер">
+              <img class="slider-image" src="images/quadrocopter.png" width="560" height="560" alt="Квадрокоптер">
               <div class="characters-container">
                 <p class="slider-title-text">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slider-text">
@@ -166,7 +163,7 @@
             </li>
             <li class="bulit-item">
               <button class="bulit-button">
-                <span class="visually-hidden">Показать вторую страницу</span>
+                <span class="visually-hidden">Показать третью страницу</span>
               </button>
             </li>
           </ul>
@@ -177,55 +174,57 @@
             <li class="devices-item">
               <a class="devices-link virt-real" href="#">Виртуальная реальность</a>
             </li>
-            <li class="devices-item monopods">
-              <a class="devices-link" href="catalog.html">Моноподы<br> для селфи</a>
+            <li class="devices-item">
+              <a class="devices-link monopods" href="catalog.html">Моноподы<br> для селфи</a>
             </li>
-            <li class="devices-item cameras">
-              <a class="devices-link" href="#">Экшн-камеры</a>
+            <li class="devices-item">
+              <a class="devices-link cameras" href="#">Экшн-камеры</a>
             </li>
-            <li class="devices-item fitness">
-              <a class="devices-link" href="#">Фитнес-браслеты</a>
+            <li class="devices-item">
+              <a class="devices-link fitness" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="devices-item watch">
-              <a class="devices-link" href="#">Умные часы</a>
+            <li class="devices-item">
+              <a class="devices-link watch" href="#">Умные часы</a>
             </li>
-            <li class="devices-item copters">
-              <a class="devices-link" href="#">Квадрокоптеры</a>
+            <li class="devices-item">
+              <a class="devices-link copters" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
         <section class="services">
-          <div class="service-container">
-            <h2 class="visually-hidden">Услуги магазина</h2>
-            <ul class="services-list">
-              <li class="services-item">
-                <a href="#" class="services-link">Доставка</a>
-              </li>
-              <li class="services-item">
-                <a href="#" class="services-link">Гарантия</a>
-              </li>
-              <li class="services-item">
-                <a href="#" class="services-link">Кредит</a>
-              </li>
-            </ul>
-            <ul class="service-list">
-              <li class="service-item current-item">
-                <p class="service-text"><span class="service-span">Доставка</span>Мы с удовольствием доставим ваш
-                  товар прямо<br>
-                  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </li>
-              <li class="service-item">
-                <p class="service-text"><span class="service-span">Гарантия</span>Если из-за возгорания купленного у
-                  нас товара у вас
-                  сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              </li>
-              <li class="service-item">
-                <p class="service-text"><span class="service-span">Кредит</span>Залезть в долговую яму стало проще!
-                  Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
-                  разумеется.
-                </p>
-              </li>
-            </ul>
+          <div class="services-container">
+            <div class="service-container">
+              <h2 class="visually-hidden">Услуги магазина</h2>
+              <ul class="services-list">
+                <li class="services-item">
+                  <a href="#" class="services-link">Доставка</a>
+                </li>
+                <li class="services-item">
+                  <a href="#" class="services-link">Гарантия</a>
+                </li>
+                <li class="services-item">
+                  <a href="#" class="services-link">Кредит</a>
+                </li>
+              </ul>
+              <ul class="service-list">
+                <li class="service-item current-item">
+                  <p class="service-text"><span class="service-span">Доставка</span>Мы с удовольствием доставим ваш
+                    товар прямо<br>
+                    к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </li>
+                <li class="service-item">
+                  <p class="service-text"><span class="service-span">Гарантия</span>Если из-за возгорания купленного у
+                    нас товара у вас
+                    сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                </li>
+                <li class="service-item">
+                  <p class="service-text"><span class="service-span">Кредит</span>Залезть в долговую яму стало проще!
+                    Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
+                    разумеется.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           <p class="rare-text"><a href="#" class="services-link-rare">Доставим редкий товар под заказ</a></p>
         </section>
@@ -278,120 +277,120 @@
           </div>
         </section>
       </main>
+      <footer class="main-footer">
+        <div class="footer-container">
+          <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <a href="#" class="contacts-link"><img class="contacts-image" src="images/yellow-logo.svg"
+                alt="Логотип сайта Device"></a>
+            <div class="footer-contacts-container">
+              <address class="contacts-footer-address">Санкт-Петербург, набережная
+                реки Карповки, 5, литера П.</address>
+              <ul class="contacts-footer-list">
+                <li class="contacts-footer-item">
+                  <a class="contacts-footer-link" href="#">Доставка</a>
+                </li>
+                <li class="contacts-footer-item">
+                  <a class="contacts-footer-link" href="#">Гарантия</a>
+                </li>
+                <li class="contacts-footer-item">
+                  <a class="contacts-footer-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <a class="contacts-footer-tel" href="Тел.:+7(812)812-12-12">Тел.: +7 (812) 812-12-12</a>
+            </div>
+            <div class="footer-bottom-container">
+              <ul class="contacts-image-list">
+                <li class="contacts-image-item">
+                  <a class="contacts-image-link" href="https://t.me/htmlacademy">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
+                      <g clip-path="url(#clip0_38882_806)">
+                        <path
+                          d="M25.4431 14.0736L13.6231 18.6316C12.8164 18.9556 12.8211 19.4056 13.4751 19.6062L16.5097 20.5529L23.5311 16.1229C23.8631 15.9209 24.1664 16.0296 23.9171 16.2509L18.2284 21.3849H18.2271L18.2284 21.3856L18.0191 24.5136C18.3257 24.5136 18.4611 24.3729 18.6331 24.2069L20.1071 22.7736L23.1731 25.0382C23.7384 25.3496 24.1444 25.1896 24.2851 24.5149L26.2977 15.0296C26.5037 14.2036 25.9824 13.8296 25.4431 14.0736Z"
+                          fill="#444444" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_38882_806">
+                          <rect width="14" height="12" fill="white" transform="translate(13 14)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                  </a>
+                </li>
+                <li class="contacts-image-item">
+                  <a class="contacts-image-link" href="https://www.youtube.com/user/htmlacademyru">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
+                      <g clip-path="url(#clip0_38882_811)">
+                        <path
+                          d="M27.6671 16.6746C27.5765 16.3515 27.4 16.0589 27.1564 15.828C26.9059 15.59 26.5989 15.4197 26.2644 15.3333C25.0124 15.0033 19.9964 15.0033 19.9964 15.0033C17.9053 14.9795 15.8147 15.0842 13.7364 15.3166C13.4019 15.4094 13.0955 15.5835 12.8444 15.8233C12.5977 16.0606 12.4191 16.3533 12.3257 16.674C12.1015 17.8818 11.9926 19.1082 12.0004 20.3366C11.9924 21.564 12.1011 22.79 12.3257 23.9993C12.4171 24.3186 12.5951 24.61 12.8424 24.8453C13.0897 25.0806 13.3977 25.2506 13.7364 25.3406C15.0051 25.67 19.9964 25.67 19.9964 25.67C22.0902 25.6938 24.1835 25.5892 26.2644 25.3566C26.5989 25.2702 26.9059 25.1 27.1564 24.862C27.3999 24.6311 27.5762 24.3385 27.6664 24.0153C27.8965 22.8079 28.0083 21.581 28.0004 20.352C28.0177 19.1177 27.906 17.885 27.6671 16.674V16.6746ZM18.4017 22.6193V18.0546L22.5751 20.3373L18.4017 22.6193Z"
+                          fill="#444444" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_38882_811">
+                          <rect width="16" height="11" fill="white" transform="translate(12 15)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts-image-item">
+                  <a class="contacts-image-link" href="https://twitter.com/htmlacademy_ru">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
+                      <path
+                        d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z"
+                        fill="#444444" />
+                    </svg>
+
+                  </a>
+                </li>
+              </ul>
+              <a class="html-academy-link" href="https://htmlacademy.ru/">
+                <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700" />
+                  <path
+                    d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M26.6 4.8H21.8V1.1H19.8V4.9H17.9V6.9H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.8H26.6V4.8Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M41.1 4.6C39.5 4.6 38.2 5.4 37.6 6.7H37.5C36.9 5.5 35.7 4.6 34.1 4.6C32.7 4.6 31.6 5.4 31 6.4H30.9V4.8H29V15.4H31V10C31 8 32 6.5 33.6 6.5C35.1 6.5 36 7.5 36 9.1V15.4H38V9.8C38 7.4 39.4 6.5 40.6 6.5C42.1 6.5 43 7.5 43 9.1V15.4H45V8.9C45.1 6.4 43.6 4.6 41.1 4.6Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9C50.2 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M28.9 19.7C28 18.6 26.7 17.9 25 17.9C21.9 17.9 19.6 20.2 19.6 23.5C19.6 26.8 21.9 29.1 25 29.1C26.8 29.1 28 28.3 28.8 27.2H28.9V28.8H30.9V18.2H28.9V19.7ZM25.3 27.1C23.1 27.1 21.7 25.5 21.7 23.5C21.7 21.5 23.1 19.9 25.3 19.9C27.5 19.9 28.9 21.5 28.9 23.5C28.9 25.4 27.5 27.1 25.3 27.1Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M44.2 22C43.7 19.6 41.6 17.9 38.8 17.9C35.4 17.9 33.2 20.4 33.2 23.5C33.2 26.6 35.4 29.1 38.8 29.1C41.6 29.1 43.7 27.3 44.2 24.9H42.1C41.7 26.2 40.4 27.2 38.8 27.2C36.6 27.2 35.2 25.6 35.2 23.6C35.2 21.6 36.6 20 38.8 20C40.4 20 41.6 21 42.1 22.2H44.2V22Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M55.1 19.7C54.2 18.6 52.9 17.9 51.2 17.9C48.1 17.9 45.8 20.2 45.8 23.5C45.8 26.8 48.1 29.1 51.2 29.1C53 29.1 54.2 28.3 55 27.2H55.1V28.8H57.1V18.2H55.1V19.7ZM51.5 27.1C49.3 27.1 47.9 25.5 47.9 23.5C47.9 21.5 49.3 19.9 51.5 19.9C53.7 19.9 55.1 21.5 55.1 23.5C55.1 25.4 53.6 27.1 51.5 27.1Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M68.7 19.8C67.8 18.7 66.5 17.9 64.8 17.9C61.7 17.9 59.4 20.2 59.4 23.5C59.4 26.8 61.6 29.1 64.8 29.1C66.5 29.1 67.8 28.3 68.6 27.3H68.7V28.8H70.7V13.4H68.7V19.8ZM65.1 27.1C62.9 27.1 61.5 25.5 61.5 23.5C61.5 21.5 62.9 19.9 65.1 19.9C67.3 19.9 68.7 21.5 68.7 23.5C68.6 25.5 67.2 27.1 65.1 27.1Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M78.3 17.9C75 17.9 72.8 20.4 72.8 23.5C72.8 26.5 74.9 29.1 78.3 29.1C80.8 29.1 82.8 27.8 83.5 25.5H81.4C80.9 26.5 79.8 27.1 78.4 27.1C76.5 27.1 75.1 25.8 75 24.2H83.8C84 20.6 81.8 17.9 78.3 17.9ZM78.3 19.8C80 19.8 81.3 20.8 81.6 22.4H75.1C75.4 20.9 76.6 19.8 78.3 19.8Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M98.2 17.9C96.6 17.9 95.3 18.7 94.6 19.9H94.5C93.9 18.7 92.7 17.9 91.1 17.9C89.7 17.9 88.6 18.6 88 19.7V18.2H86.1V28.8H88.1V23.4C88.1 21.4 89.1 20 90.7 19.9C92.2 19.9 93.1 20.9 93.1 22.5V28.8H95.1V23.2C95.1 20.8 96.5 19.9 97.7 19.9C99.2 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2 17.9Z"
+                    fill="#FFC700" />
+                  <path
+                    d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"
+                    fill="#FFC700" />
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+      </footer>
     </div>
-    <footer class="main-footer">
-      <div class="footer-container">
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a href="#" class="contacts-link"><img class="contacts-image" src="images/yellow-logo.svg"
-              alt="Логотип сайта Device"></a>
-          <div class="footer-contacts-container">
-            <address class="contacts-footer-address">Санкт-Петербург, набережная
-              реки Карповки, 5, литера П.</address>
-            <ul class="contacts-footer-list">
-              <li class="contacts-footer-item">
-                <a class="contacts-footer-link" href="#">Доставка</a>
-              </li>
-              <li class="contacts-footer-item">
-                <a class="contacts-footer-link" href="#">Гарантия</a>
-              </li>
-              <li class="contacts-footer-item">
-                <a class="contacts-footer-link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <a class="contacts-footer-tel" href="Тел.:+7(812)812-12-12">Тел.: +7 (812) 812-12-12</a>
-          </div>
-          <div class="footer-bottom-container">
-            <ul class="contacts-image-list">
-              <li class="contacts-image-item">
-                <a class="contacts-image-link" href="https://t.me/htmlacademy">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
-                    <g clip-path="url(#clip0_38882_806)">
-                      <path
-                        d="M25.4431 14.0736L13.6231 18.6316C12.8164 18.9556 12.8211 19.4056 13.4751 19.6062L16.5097 20.5529L23.5311 16.1229C23.8631 15.9209 24.1664 16.0296 23.9171 16.2509L18.2284 21.3849H18.2271L18.2284 21.3856L18.0191 24.5136C18.3257 24.5136 18.4611 24.3729 18.6331 24.2069L20.1071 22.7736L23.1731 25.0382C23.7384 25.3496 24.1444 25.1896 24.2851 24.5149L26.2977 15.0296C26.5037 14.2036 25.9824 13.8296 25.4431 14.0736Z"
-                        fill="#444444" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_38882_806">
-                        <rect width="14" height="12" fill="white" transform="translate(13 14)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                </a>
-              </li>
-              <li class="contacts-image-item">
-                <a class="contacts-image-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
-                    <g clip-path="url(#clip0_38882_811)">
-                      <path
-                        d="M27.6671 16.6746C27.5765 16.3515 27.4 16.0589 27.1564 15.828C26.9059 15.59 26.5989 15.4197 26.2644 15.3333C25.0124 15.0033 19.9964 15.0033 19.9964 15.0033C17.9053 14.9795 15.8147 15.0842 13.7364 15.3166C13.4019 15.4094 13.0955 15.5835 12.8444 15.8233C12.5977 16.0606 12.4191 16.3533 12.3257 16.674C12.1015 17.8818 11.9926 19.1082 12.0004 20.3366C11.9924 21.564 12.1011 22.79 12.3257 23.9993C12.4171 24.3186 12.5951 24.61 12.8424 24.8453C13.0897 25.0806 13.3977 25.2506 13.7364 25.3406C15.0051 25.67 19.9964 25.67 19.9964 25.67C22.0902 25.6938 24.1835 25.5892 26.2644 25.3566C26.5989 25.2702 26.9059 25.1 27.1564 24.862C27.3999 24.6311 27.5762 24.3385 27.6664 24.0153C27.8965 22.8079 28.0083 21.581 28.0004 20.352C28.0177 19.1177 27.906 17.885 27.6671 16.674V16.6746ZM18.4017 22.6193V18.0546L22.5751 20.3373L18.4017 22.6193Z"
-                        fill="#444444" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_38882_811">
-                        <rect width="16" height="11" fill="white" transform="translate(12 15)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts-image-item">
-                <a class="contacts-image-link" href="https://twitter.com/htmlacademy_ru">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
-                    <path
-                      d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z"
-                      fill="#444444" />
-                  </svg>
-
-                </a>
-              </li>
-            </ul>
-            <a class="html-academy-link" href="https://htmlacademy.ru/">
-              <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700" />
-                <path
-                  d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"
-                  fill="#FFC700" />
-                <path
-                  d="M26.6 4.8H21.8V1.1H19.8V4.9H17.9V6.9H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.8H26.6V4.8Z"
-                  fill="#FFC700" />
-                <path
-                  d="M41.1 4.6C39.5 4.6 38.2 5.4 37.6 6.7H37.5C36.9 5.5 35.7 4.6 34.1 4.6C32.7 4.6 31.6 5.4 31 6.4H30.9V4.8H29V15.4H31V10C31 8 32 6.5 33.6 6.5C35.1 6.5 36 7.5 36 9.1V15.4H38V9.8C38 7.4 39.4 6.5 40.6 6.5C42.1 6.5 43 7.5 43 9.1V15.4H45V8.9C45.1 6.4 43.6 4.6 41.1 4.6Z"
-                  fill="#FFC700" />
-                <path
-                  d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9C50.2 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
-                  fill="#FFC700" />
-                <path
-                  d="M28.9 19.7C28 18.6 26.7 17.9 25 17.9C21.9 17.9 19.6 20.2 19.6 23.5C19.6 26.8 21.9 29.1 25 29.1C26.8 29.1 28 28.3 28.8 27.2H28.9V28.8H30.9V18.2H28.9V19.7ZM25.3 27.1C23.1 27.1 21.7 25.5 21.7 23.5C21.7 21.5 23.1 19.9 25.3 19.9C27.5 19.9 28.9 21.5 28.9 23.5C28.9 25.4 27.5 27.1 25.3 27.1Z"
-                  fill="#FFC700" />
-                <path
-                  d="M44.2 22C43.7 19.6 41.6 17.9 38.8 17.9C35.4 17.9 33.2 20.4 33.2 23.5C33.2 26.6 35.4 29.1 38.8 29.1C41.6 29.1 43.7 27.3 44.2 24.9H42.1C41.7 26.2 40.4 27.2 38.8 27.2C36.6 27.2 35.2 25.6 35.2 23.6C35.2 21.6 36.6 20 38.8 20C40.4 20 41.6 21 42.1 22.2H44.2V22Z"
-                  fill="#FFC700" />
-                <path
-                  d="M55.1 19.7C54.2 18.6 52.9 17.9 51.2 17.9C48.1 17.9 45.8 20.2 45.8 23.5C45.8 26.8 48.1 29.1 51.2 29.1C53 29.1 54.2 28.3 55 27.2H55.1V28.8H57.1V18.2H55.1V19.7ZM51.5 27.1C49.3 27.1 47.9 25.5 47.9 23.5C47.9 21.5 49.3 19.9 51.5 19.9C53.7 19.9 55.1 21.5 55.1 23.5C55.1 25.4 53.6 27.1 51.5 27.1Z"
-                  fill="#FFC700" />
-                <path
-                  d="M68.7 19.8C67.8 18.7 66.5 17.9 64.8 17.9C61.7 17.9 59.4 20.2 59.4 23.5C59.4 26.8 61.6 29.1 64.8 29.1C66.5 29.1 67.8 28.3 68.6 27.3H68.7V28.8H70.7V13.4H68.7V19.8ZM65.1 27.1C62.9 27.1 61.5 25.5 61.5 23.5C61.5 21.5 62.9 19.9 65.1 19.9C67.3 19.9 68.7 21.5 68.7 23.5C68.6 25.5 67.2 27.1 65.1 27.1Z"
-                  fill="#FFC700" />
-                <path
-                  d="M78.3 17.9C75 17.9 72.8 20.4 72.8 23.5C72.8 26.5 74.9 29.1 78.3 29.1C80.8 29.1 82.8 27.8 83.5 25.5H81.4C80.9 26.5 79.8 27.1 78.4 27.1C76.5 27.1 75.1 25.8 75 24.2H83.8C84 20.6 81.8 17.9 78.3 17.9ZM78.3 19.8C80 19.8 81.3 20.8 81.6 22.4H75.1C75.4 20.9 76.6 19.8 78.3 19.8Z"
-                  fill="#FFC700" />
-                <path
-                  d="M98.2 17.9C96.6 17.9 95.3 18.7 94.6 19.9H94.5C93.9 18.7 92.7 17.9 91.1 17.9C89.7 17.9 88.6 18.6 88 19.7V18.2H86.1V28.8H88.1V23.4C88.1 21.4 89.1 20 90.7 19.9C92.2 19.9 93.1 20.9 93.1 22.5V28.8H95.1V23.2C95.1 20.8 96.5 19.9 97.7 19.9C99.2 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2 17.9Z"
-                  fill="#FFC700" />
-                <path
-                  d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"
-                  fill="#FFC700" />
-              </svg>
-            </a>
-          </div>
-        </section>
-      </div>
-    </footer>
   </body>
 
 </html>
