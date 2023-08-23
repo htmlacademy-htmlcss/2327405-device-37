@@ -455,7 +455,6 @@ body {
   padding-right: 70px;
   padding-top: 15px;
   padding-bottom: 17px;
-
 }
 
 .navigation-link::before {
@@ -486,8 +485,8 @@ body {
   background-color: #ffe17f;
   position: absolute;
   left: 0;
-  top: 179px;
-  height: 169px;
+  top: 170px;
+  height: 157px;
 }
 
 .submenu-container:hover .navigation-link:before {
@@ -516,7 +515,7 @@ body {
 }
 
 .navigation-devices-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .navigation-devices-link:focus {
@@ -1752,7 +1751,7 @@ box-sizing: border-box;
   color: #000000;
   margin: 0;
   padding: 0;
-  
+
 }
 
 .main-navigation-list {
