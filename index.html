@@ -48,32 +48,34 @@
               <li class="navigation-item">
                 <a class="navigation-item-link navigation-compare" href="#">Сравнить</a>
               </li>
-              <li class="navigation-item navigation-basket">
-                <a class="navigation-item-link navigation-basket" href="#">Корзина</a>
-                <span class="navigation-item-span">2</span>
+              <li class="navigation-item navigation-basket-item">
+                <a class="navigation-item-link navigation-basket" href="#">
+                  <span class="navigation-item-span">2</span>
+                  Корзина
+                </a>
+                <div class="basket-container">
+                  <p class="basket-text">
+                    <a class="basket-link like-selfie" href="#">Любительская<br> селфи-палка</a>
+                  </p>
+                  <button class="close-button top-button" type="button">
+                    <span class="visually-hidden">Убрать товар</span>
+                  </button>
+                  <p class="basket-text">
+                    <a class="basket-link pro-selfie" href="#">Профессиональная<br> селфи-палка</a>
+                  </p>
+                  <button class="close-button bottom-button" type="button">
+                    <span class="visually-hidden">Убрать товар</span>
+                  </button>
+                  <div class="products-container">
+                    <p class="products-text">Товаров: 2</p>
+                    <p class="products-text">Сумма: 2000 ₽</p>
+                  </div>
+                  <button class="basket-button" type="button">
+                    <span class="basket-span">Открыть корзину</span>
+                  </button>
+                </div>
               </li>
             </ul>
-            <div class="basket-container">
-              <button class="close-button top-button" type="button">
-                <span class="visually-hidden">Убрать товар</span>
-              </button>
-              <p class="basket-text ">
-                <a class="basket-link like-selfie" href="#">Любительская<br> селфи-палка</a>
-              </p>
-              <button class="close-button bottom-button" type="button">
-                <span class="visually-hidden">Убрать товар</span>
-              </button>
-              <p class="basket-text">
-                <a class="basket-link pro-selfie" href="#">Профессиональная<br> селфи-палка</a>
-              </p>
-              <div class="products-container">
-                <p class="products-text">Товаров: 2</p>
-                <p class="products-text">Сумма: 2000 ₽</p>
-              </div>
-              <button class="basket-button" type="button">
-                <span class="basket-span">Открыть корзину</span>
-              </button>
-            </div>
           </div>
           <div class="header-bottom-container">
             <div class="submenu-container">
@@ -128,6 +130,12 @@
           </h2>
           <ul class="slider-list">
             <li class="slider-item slider-item-active">
+              <button class="slider-button slider-button-left" type="button">
+                <span class="visually-hidden">Показать прошлую страницу</span>
+              </button>
+              <button class="slider-button slider-button-right" type="button">
+                <span class="visually-hidden">Показать следующую страницу</span>
+              </button>
               <img class="slider-image" src="images/quadrocopter.png" width="560" height="560" alt="Квадрокоптер">
               <div class="characters-container">
                 <p class="slider-title-text">Порхает как бабочка, жалит как пчела!</p>
@@ -136,7 +144,7 @@
                   стандартную
                   камеру.
                 </p>
-                <p class="yellow-text"><a href="#" class="yellow-link yellow-more">Подробнее</a></p>
+                <button href="#" class="yellow-link yellow-more">Подробнее</button>
                 <ul class="character-list">
                   <li class="character-item">
                     <span class="slider-span">800 м</span>
@@ -149,67 +157,115 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-item">
-              <img class="slider-image" src="images/smart-watch.jpg" alt="Умные часы">
-              <p class="slider-title-text">Худеем правильно!</p>
-              <p class="slider-text">
-                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-              </p>
-              <p class="yellow-text"><a href="#" class="yellow-link">Подробнее</a></p>
-              <ul class="slider-list">
-                <li class="slider-item">
-                  <span class="slider-span">48 часов</span>
-                  <span class="character-span">без подзарядки</span>
-                </li>
-              </ul>
-            </li>
-            <li class="slider-item">
-              <img class="slider-image" src="images/selfie.jpg" width="560" height="560" alt="Селфи палки">
-              <p class="slider-title-text">Делай селфи, как Бен Стиллер! </p>
-              <p class="slider-text">
-                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-                всего
-                5 кг.
-              </p>
-              <button class="yellow-link" type="button">Подробнее</button>
-              <ul class="slider-list">
-                <li class="slider-item">
-                  <span class="slider-span">8,5 м</span>
-                  <span class="character-span">Длина палки</span>
-                </li>
-                <li class="slider-item">
-                  <span class="slider-span">5 кг</span>
-                  <span class="character-span">Вес палки</span>
-                </li>
-                <li class="slider-item">
-                  <span class="slider-span">Карбон</span>
-                  <span class="character-span">Материал</span>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <button class="slider-button slider-button-left" type="button">
-            <span class="visually-hidden">Показать прошлую страницу</span>
-          </button>
-          <button class="slider-button slider-button-right" type="button">
-            <span class="visually-hidden">Показать следующую страницу</span>
-          </button>
-          <ul class="bulits-list">
-            <li class="bulit-item">
-              <button class="bulit-button bulit-current">
-                <span class="visually-hidden">Показать первую страницу</span>
+            <li class="slider-item slider-watch">
+              <button class="slider-button slider-button-left" type="button">
+                <span class="visually-hidden">Показать прошлую страницу</span>
               </button>
-            </li>
-            <li class="bulit-item">
-              <button class="bulit-button">
-                <span class="visually-hidden">Показать вторую страницу</span>
+              <button class="slider-button slider-button-right" type="button">
+                <span class="visually-hidden">Показать следующую страницу</span>
               </button>
+              <img class="slider-image" src="images/smart-watch.png" width="560" height="560" alt="Умные часы">
+              <div class="characters-container">
+                <p class="slider-title-text">Худеем правильно!</p>
+                <p class="slider-text">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                </p>
+                <p class="yellow-text">
+                  <a href="#" class="yellow-link yellow-more">Подробнее</a>
+                </p>
+                <ul class="character-list">
+                  <li class="character-item">
+                    <span class="slider-span">48 часов</span>
+                    <span class="character-span">без подзарядки</span>
+                  </li>
+                </ul>
+                <ul class="bulits-list">
+                  <li class="bulit-item">
+                    <button class="bulit-button bulit-current">
+                      <span class="visually-hidden">Показать первую страницу</span>
+                    </button>
+                  </li>
+                  <li class="bulit-item">
+                    <button class="bulit-button">
+                      <span class="visually-hidden">Показать вторую страницу</span>
+                    </button>
+                  </li>
+                  <li class="bulit-item">
+                    <button class="bulit-button">
+                      <span class="visually-hidden">Показать третью страницу</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="bulit-item">
-              <button class="bulit-button">
-                <span class="visually-hidden">Показать третью страницу</span>
+            <li class="slider-item slider-selfie">
+              <button class="slider-button slider-button-left" type="button">
+                <span class="visually-hidden">Показать прошлую страницу</span>
               </button>
+              <button class="slider-button slider-button-right" type="button">
+                <span class="visually-hidden">Показать следующую страницу</span>
+              </button>
+              <img class="slider-image" src="images/selfie.png" width="560" height="560" alt="Селфи палки">
+              <div class="characters-container">
+                <p class="slider-title-text">Делай селфи, как Бен Стиллер! </p>
+                <p class="slider-text">
+                  Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
+                  всего
+                  5 кг.
+                </p>
+                <p class="yellow-text">
+                  <a href="#" class="yellow-link yellow-more">Подробнее</a>
+                </p>
+                <ul class="character-list">
+                  <li class="character-item">
+                    <span class="slider-span">8,5 м</span>
+                    <span class="character-span">Длина палки</span>
+                  </li>
+                  <li class="character-item">
+                    <span class="slider-span">5 кг</span>
+                    <span class="character-span">Вес палки</span>
+                  </li>
+                  <li class="character-item">
+                    <span class="slider-span">Карбон</span>
+                    <span class="character-span">Материал</span>
+                  </li>
+                </ul>
+                <ul class="bulits-list">
+                  <li class="bulit-item">
+                    <button class="bulit-button bulit-current">
+                      <span class="visually-hidden">Показать первую страницу</span>
+                    </button>
+                  </li>
+                  <li class="bulit-item">
+                    <button class="bulit-button">
+                      <span class="visually-hidden">Показать вторую страницу</span>
+                    </button>
+                  </li>
+                  <li class="bulit-item">
+                    <button class="bulit-button">
+                      <span class="visually-hidden">Показать третью страницу</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
+            <ul class="bulits-list">
+              <li class="bulit-item">
+                <button class="bulit-button bulit-current">
+                  <span class="visually-hidden">Показать первую страницу</span>
+                </button>
+              </li>
+              <li class="bulit-item">
+                <button class="bulit-button">
+                  <span class="visually-hidden">Показать вторую страницу</span>
+                </button>
+              </li>
+              <li class="bulit-item">
+                <button class="bulit-button">
+                  <span class="visually-hidden">Показать третью страницу</span>
+                </button>
+              </li>
+            </ul>
           </ul>
         </section>
         <section class="devices">
@@ -241,13 +297,13 @@
               <h2 class="visually-hidden">Услуги магазина</h2>
               <ul class="services-list">
                 <li class="services-item black-button">
-                  <a href="#" class="services-link yellow-link black-link">Доставка</a>
+                  <button href="#" class="services-link yellow-link black-link">Доставка</button>
                 </li>
                 <li class="services-item guarantee-item">
-                  <a href="#" class="services-link yellow-link yellow-guarantee">Гарантия</a>
+                  <button href="#" class="services-link yellow-link yellow-guarantee">Гарантия</button>
                 </li>
                 <li class="services-item">
-                  <a href="#" class="yellow-link yellow-credit">Кредит</a>
+                  <button href="#" class=" services-link yellow-link yellow-credit">Кредит</button>
                 </li>
               </ul>
               <ul class="service-list">
@@ -428,7 +484,64 @@
           </section>
         </div>
       </footer>
+      <div class="modal-wrapper">
+        <div class="modal modal-auth">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+          <form action="https://echo.htmlacademy.ru" class="modal-form" method-get>
+            <div class="form-container">
+              <div class="name-container">
+                <label class="name-label" for="name-field">Ваше имя</label>
+                <input class="name-field" type="text" id="name-field" placeholder="Введите имя" name="your-name"
+                  required>
+              </div>
+              <div class="e-mail-container">
+                <label class="name-label" for="email-field">Ваш e-mail:</label>
+                <input class="name-field e-mail-field" type="text" id="email-field" placeholder="почта"
+                  name="your-e-mail" required>
+                <p class="funny">Забавный у вас адрес</p>
+              </div>
+            </div>
+            <div class="market-container">
+              <div class="market-small-container">
+                <label class="name-label" for="market-field">Что нужно привезти:</label>
+                <input class="name-field market-field" type="text" id="market-field" placeholder="В свободной форме"
+                  name="your-product" required>
+              </div>
+              <div class="quantity-container">
+                <div class="quantity-top">
+                  <label class="name-label how-much-label" for="quantity">Количество:</label>
+                  <button class="how-much-button">
+                    <span class="visually-hidden">
+                      Пояснение
+                    </span>
+                  </button>
+                  <div class="quantity-top-container">
+                  <p class="quantity-top-text">
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.
+                  </p>
+                  </div>
+                </div>
+                <div class="quantity-small-container">
+                  <button class="quantity-button" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class=" name-field quantity-input" type="text" placeholder="1" name="quantity" id="quantity"
+                    required>
+                  <button class="quantity-button button-plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="yellow-link modal-link" type="button">Отправить</button>
+        </div>
+      </div>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 
 </html>

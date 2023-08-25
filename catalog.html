@@ -28,8 +28,31 @@
                   <li class="navigation-item catalog-navigation">
                     <a class="navigation-item-link navigation-compare navigation-compare-catalog" href="#">Сравнить</a>
                   </li>
-                  <li class="navigation-item catalog-navigation">
-                    <a class="navigation-item-link navigation-basket" href="#">Корзина</a>
+                  <li class="navigation-item navigation-basket-item">
+                    <a class="navigation-item-link navigation-basket" href="#">
+                      <span class="navigation-item-span">2</span>
+                      Корзина</a>
+                    <div class="basket-container">
+                      <button class="close-button top-button" type="button">
+                        <span class="visually-hidden">Убрать товар</span>
+                      </button>
+                      <p class="basket-text">
+                        <a class="basket-link like-selfie" href="#">Любительская<br> селфи-палка</a>
+                      </p>
+                      <button class="close-button bottom-button" type="button">
+                        <span class="visually-hidden">Убрать товар</span>
+                      </button>
+                      <p class="basket-text">
+                        <a class="basket-link pro-selfie" href="#">Профессиональная<br> селфи-палка</a>
+                      </p>
+                      <div class="products-container">
+                        <p class="products-text">Товаров: 2</p>
+                        <p class="products-text">Сумма: 2000 ₽</p>
+                      </div>
+                      <button class="basket-button" type="button">
+                        <span class="basket-span">Открыть корзину</span>
+                      </button>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -37,31 +60,33 @@
                 <div class="submenu-container">
                   <a href="#" class="navigation-link">Каталог товаров</a>
                   <div class="submenu">
-                    <ul class="navigation-devices-list">
-                      <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Виртуальная
-                          реальность</a>
-                      </li>
-                      <li class="navigation-devices-item"><a class="navigation-devices-link"
-                          href="catalog.html">Моноподы
-                          для
-                          cелфи</a>
-                      </li>
-                      <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Экшн-камеры</a>
-                      </li>
-                    </ul>
-                    <ul class="navigation-devices-list">
-                      <li class="navigation-devices-item">
-                        <a class="navigation-devices-link" href="#">Фитнес браслеты</a>
-                      </li>
-                      <li class="navigation-devices-item">
-                        <a class="navigation-devices-link" href="#">Умные часы</a>
-                      </li>
-                    </ul>
-                    <ul class="navigation-devices-list">
-                      <li class="navigation-devices-item">
-                        <a class="navigation-devices-link" href="#">Квадрокоптеры</a>
-                      </li>
-                    </ul>
+                    <div class="submenu-small-container">
+                      <ul class="navigation-devices-list">
+                        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Виртуальная
+                            реальность</a>
+                        </li>
+                        <li class="navigation-devices-item"><a class="navigation-devices-link"
+                            href="catalog.html">Моноподы
+                            для
+                            cелфи</a>
+                        </li>
+                        <li class="navigation-devices-item"><a class="navigation-devices-link" href="#">Экшн-камеры</a>
+                        </li>
+                      </ul>
+                      <ul class="navigation-devices-list">
+                        <li class="navigation-devices-item">
+                          <a class="navigation-devices-link" href="#">Фитнес браслеты</a>
+                        </li>
+                        <li class="navigation-devices-item">
+                          <a class="navigation-devices-link" href="#">Умные часы</a>
+                        </li>
+                      </ul>
+                      <ul class="navigation-devices-list">
+                        <li class="navigation-devices-item">
+                          <a class="navigation-devices-link" href="#">Квадрокоптеры</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <ul class="navigation-product-list">
@@ -98,25 +123,31 @@
           </nav>
         </div>
         <section class="variants">
-          <ul class="variants-list">
-            <li class="variants-item">Фильтр</li>
-            <li class="variants-item">Сортировка</li>
-            <li class="variants-item">
-              <select class="variants-select" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="rating">Рейтинговые</option>
-              </select>
-            </li>
-            <li class="variants-item">
-              <button class="variants-button button-plus" type="button">Вверх</button>
-              <button class="variants-button button-plus" type="button">Вниз</button>
-            </li>
-          </ul>
+          <div class="variants-top-container">
+            <ul class="variants-list">
+              <li class="variants-item">Фильтр:</li>
+              <li class="variants-item">Сортировка</li>
+              <li class="variants-item">
+                <select class="variants-select" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="rating">Рейтинговые</option>
+                </select>
+              </li>
+              <li class="variants-item">
+                <button class="variants-button button-top" type="button">
+                  <p class="visually-hidden">Вверх</p>
+                </button>
+                <button class="variants-button button-bottom" type="button">
+                  <p class="visually-hidden">Вниз</p>
+                </button>
+              </li>
+            </ul>
+          </div>
           <div class="variants-container">
             <div class="filter-container">
               <form class="variants-catalog" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="variants-catalog-part">
-                  <legend class="variants-catalog-part-title">Стоимость</legend>
+                  <legend class="variants-catalog-part-title variants-price">Стоимость</legend>
                   <div class="range-container">
                     <div class="range-scale">
                       <div class="range"></div>
@@ -128,8 +159,8 @@
                       <span class="visually-hidden">Установить максимальный порог цены</span>
                     </button>
                 </fieldset>
-                <fieldset class="variants-catalog-part">
-                  <legend class="variants-catalog-part-title">Цвет</legend>
+                <fieldset class="variants-catalog-part color-part">
+                  <legend class="variants-catalog-part-title variant-color">Цвет</legend>
                   <ul class="variants-catalog-part-list">
                     <li class="variants-catalog-part-item">
                       <label class="color">
@@ -164,8 +195,8 @@
                   </ul>
                 </fieldset>
                 <fieldset class="variants-catalog-part">
-                  <legend class="variants-catalog-part-title">Bluetooth</legend>
-                  <ul class="variants-catalog-part-list">
+                  <legend class="variants-catalog-part-title variant-bluetooth">Bluetooth</legend>
+                  <ul class="variants-catalog-part-list variant-bluetooth-list">
                     <li class="filter-catalog-part-item">
                       <label class="Bluetooth">
                         <input type="radio" class="variants-radio" name="choose-type" value="yes" checked>
@@ -179,7 +210,7 @@
                       </label>
                     </li>
                 </fieldset>
-                <a class="variants-form-link" href="#">Показать</a>
+                <button class="variants-form-link yellow-link" href="#">Показать</button>
               </form>
             </div>
             <div class="images-container">
@@ -201,7 +232,7 @@
                     <p class="variants-selfie-text">
                       <a class="variants-selfie-link" href="#">Профессиональная<br> селфи-палка</a>
                     </p>
-                    <p class="variants-selfie-price">1500 ₽</p>
+                    <p class="variants-selfie-price">1 500 ₽</p>
                   </div>
                 </li>
                 <li class="variants-selfie-item">
@@ -211,7 +242,7 @@
                     <p class="variants-selfie-text">
                       <a class="variants-selfie-link" href="#">Непотопляемая<br> селфи-палка</a>
                     </p>
-                    <p class="variants-selfie-price">2500 ₽</p>
+                    <p class="variants-selfie-price">2 500 ₽</p>
                   </div>
                 </li>
                 <li class="variants-selfie-item">
@@ -221,7 +252,7 @@
                     <p class="variants-selfie-text">
                       <a class="variants-selfie-link" href="#">Селфи-палка «Следуй<br> за мной»</a>
                     </p>
-                    <p class="variants-selfie-price">1500 ₽</p>
+                    <p class="variants-selfie-price">1 500 ₽</p>
                   </div>
                 </li>
               </ul>
