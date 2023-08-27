@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -24,6 +26,9 @@
                 <ul class="navigation-list navigation-catalog-list">
                   <li class="navigation-item catalog-navigation">
                     <a class="navigation-item-link navigation-come" href="#">Коля Петухов</a>
+                  </li>
+                  <li class="navigation-item catalog-navigation">
+                    <a class="navigation-item-link navigation-exit navigation-exit" href="#">Выйти</a>
                   </li>
                   <li class="navigation-item catalog-navigation">
                     <a class="navigation-item-link navigation-compare navigation-compare-catalog" href="#">Сравнить</a>
@@ -135,10 +140,10 @@
               </li>
               <li class="variants-item">
                 <button class="variants-button button-top" type="button">
-                  <p class="visually-hidden">Вверх</p>
+                  <span class="visually-hidden">Вверх</span>
                 </button>
                 <button class="variants-button button-bottom" type="button">
-                  <p class="visually-hidden">Вниз</p>
+                  <span class="visually-hidden">Вниз</span>
                 </button>
               </li>
             </ul>
@@ -153,11 +158,14 @@
                       <div class="range"></div>
                     </div>
                     <button class="range-handle range-handle-min" type="button">
-                      <span class="visually-hidden">Установить минимальный порог цены</span>
+                      <span class="range-handle-span">от 0</span>
+                      <span class="price-span"></span>
                     </button>
                     <button class="range-handle range-handle-max" type="button">
-                      <span class="visually-hidden">Установить максимальный порог цены</span>
+                      <span class="range-handle-span span-top">до 5000</span>
+                      <span class="price-span"></span>
                     </button>
+                  </div>
                 </fieldset>
                 <fieldset class="variants-catalog-part color-part">
                   <legend class="variants-catalog-part-title variant-color">Цвет</legend>
@@ -209,14 +217,22 @@
                         <span class="bluetooth-span">Нет</span>
                       </label>
                     </li>
+                  </ul>
                 </fieldset>
-                <button class="variants-form-link yellow-link" href="#">Показать</button>
+                <button class="variants-form-link yellow-link">
+                  <span class="variants-form-span">Показать</span>
+                </button>
               </form>
             </div>
             <div class="images-container">
               <ul class="variants-selfie-list">
                 <li class="variants-selfie-item">
-                  <img class="variants-selfie-image" src="images/hobby-selfie.jpg" width="360px" height="380px"
+                  <button class="image-link">
+                    <span class="visually-hidden">
+                      Показать
+                    </span>
+                  </button>
+                  <img class="variants-selfie-image" src="images/hobby-selfie.jpg" width="360" height="380"
                     alt="Любительская селфи-палка">
                   <div class="selfie-item-container">
                     <p class="variants-selfie-text">
@@ -225,8 +241,13 @@
                     <p class="variants-selfie-price">500 ₽</p>
                   </div>
                 </li>
-                <li class="variants-selfie-item">
-                  <img class="variants-selfie-image" src="images/pro-selfie.jpg" width="360px" height="380px"
+                <li class="variants-selfie-item pro-image">
+                  <button class="image-link">
+                    <span class="visually-hidden">
+                      Показать
+                    </span>
+                  </button>
+                  <img class="variants-selfie-image" src="images/pro-selfie.jpg" width="360" height="380"
                     alt="Профессиональная селфи-палка">
                   <div class="selfie-item-container">
                     <p class="variants-selfie-text">
@@ -234,9 +255,15 @@
                     </p>
                     <p class="variants-selfie-price">1 500 ₽</p>
                   </div>
+
                 </li>
                 <li class="variants-selfie-item">
-                  <img class="variants-selfie-image" src="images/water-selfie.jpg" width="360px" height="380px"
+                  <button class="image-link">
+                    <span class="visually-hidden">
+                      Показать
+                    </span>
+                  </button>
+                  <img class="variants-selfie-image" src="images/water-selfie.jpg" width="360" height="380"
                     alt="Непотопляемая селфи-палка">
                   <div class="selfie-item-container">
                     <p class="variants-selfie-text">
@@ -246,7 +273,12 @@
                   </div>
                 </li>
                 <li class="variants-selfie-item">
-                  <img class="variants-selfie-image" src="images/hand-selfie.jpg" width="360px" height="380px"
+                  <button class="image-link">
+                    <span class="visually-hidden">
+                      Показать
+                    </span>
+                  </button>
+                  <img class="variants-selfie-image" src="images/hand-selfie.jpg" width="360" height="380"
                     alt="Селфи-палка «Следуй за мной»">
                   <div class="selfie-item-container">
                     <p class="variants-selfie-text">
@@ -258,30 +290,30 @@
               </ul>
               <button class="download-more" type="button">Загрузить ещё</button>
               <div class="pagination">
-                <ul class="pagination-list">
-                  <li class="pagination-word">
-                    <a class="pagination-link back">Назад</a>
+                <button class="pagination-link back">
+                  <span class="back-span">Назад</span>
+                </button>
+                <ul class="pagination-small">
+                  <li class="pagination-item">
+                    <a class="pagination-link number">1</a>
                   </li>
-                  <ul class="pagination-small">
-                    <li class="pagination-item">
-                      <a class="pagination-link">1</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                      <p class="pagination-text">...</p>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">15</a>
-                    </li>
-                  </ul>
-                  <li class="pagination-word">
-                    <a class="pagination-link go" href="#">Вперед</a>
+                  <li class="pagination-item">
+                    <a class="pagination-link number" href="#">2</a>
                   </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link number" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <p class="pagination-text">...</p>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link number" href="#">15</a>
+                  </li>
+                </ul>
+                <button class="pagination-link back go">
+                  <span class="back-span">Вперед</span>
+                </button>
+                </li>
                 </ul>
               </div>
             </div>
@@ -338,17 +370,17 @@
               <ul class="contacts-image-list">
                 <li class="contacts-image-item">
                   <a class="contacts-image-link" href="https://t.me/htmlacademy">
-                    <img class="contact-image" src="images/telegram.svg">
+                    <img class="contact-image" src="images/telegram.svg" alt="telegram">
                   </a>
                 </li>
                 <li class="contacts-image-item">
                   <a class="contacts-image-link" href="https://www.youtube.com/user/htmlacademyru">
-                    <img class="contact-image" src="images/youtube.svg">
+                    <img class="contact-image" src="images/youtube.svg" alt="youtube">
                   </a>
                 </li>
                 <li class="contacts-image-item">
                   <a class="contacts-image-link" href="https://twitter.com/htmlacademy_ru">
-                    <img class="contact-image" src="images/twitter.svg">
+                    <img class="contact-image" src="images/twitter.svg" alt="twitter">
                   </a>
                 </li>
               </ul>
@@ -384,6 +416,7 @@
           </section>
         </div>
       </footer>
+    </div>
   </body>
 
 </html>
